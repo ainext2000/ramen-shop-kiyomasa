@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 // 例: { src: "https://...", alt: "説明" }
 const images: { src: string; alt: string }[] = [];
 
-const PLACEHOLDER_COUNT = 4;
+const PLACEHOLDER_COUNT = 3;
 const DURATION = 800;
 const PAUSE = 4000;
 
@@ -80,6 +80,7 @@ export default function ConceptGallery() {
   return (
     <div
       className="relative w-full h-48 md:h-72 lg:h-96 overflow-hidden group"
+      style={{ touchAction: "pan-y" }}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
