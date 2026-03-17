@@ -33,7 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" suppressHydrationWarning>
+      <script dangerouslySetInnerHTML={{ __html: "history.scrollRestoration='manual';window.scrollTo(0,0);" }} />
       <body
         className={`${notoSansJP.variable} ${notoSerifJP.variable} ${yujiSyuku.variable} font-sans bg-shop-bg text-shop-text min-h-screen flex flex-col`}
       >
