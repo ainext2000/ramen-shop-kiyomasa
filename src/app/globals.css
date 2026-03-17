@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050505;
+  --color-foreground: #e5e5e5;
+
+  /* Premium Shop Colors */
+  --color-shop-bg: #050505;
+  --color-shop-card: #0a0a0a;
+  --color-shop-red: #8b0000;
+  --color-shop-gold: #c7a45e;
+  --color-shop-text: #e5e5e5;
+  --color-shop-muted: #888888;
+
+  --font-serif: var(--font-noto-serif-jp), serif;
+  --font-sans: var(--font-noto-sans-jp), sans-serif;
+  --font-brush: var(--font-brush), cursive;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+}
+
+/* 縦書き用ユーティリティクラス */
+@layer utilities {
+  .writing-vertical-rl {
+    writing-mode: vertical-rl;
+  }
+}
+
