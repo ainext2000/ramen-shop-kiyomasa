@@ -4,18 +4,9 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const slides: { src: string; alt: string }[] = [
-  {
-    src: "https://loremflickr.com/1920/1080/ramen?lock=1",
-    alt: "清正ラーメン",
-  },
-  {
-    src: "https://loremflickr.com/1920/1080/ramen,noodle?lock=42",
-    alt: "特製スープ",
-  },
-  {
-    src: "https://loremflickr.com/1920/1080/ramen,soup?lock=77",
-    alt: "自家製焼豚ラーメン",
-  },
+  { src: "/images/hero1.jpg", alt: "清正ラーメン" },
+  { src: "/images/hero2.jpg", alt: "特製スープ" },
+  { src: "/images/hero3.jpg", alt: "自家製焼豚ラーメン" },
 ];
 
 // 画像が未登録の場合に使うプレースホルダー枚数
