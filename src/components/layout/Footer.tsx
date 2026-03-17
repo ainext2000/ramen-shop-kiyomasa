@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { shopData } from "@/data/shop";
 
 export default function Footer() {
   return (
@@ -11,17 +10,8 @@ export default function Footer() {
             <span className="text-3xl font-brush text-white tracking-[0.3em]">麺屋 清正</span>
             <span className="text-xs text-shop-gold font-serif tracking-[0.5em]">MENYA KIYOMASA</span>
             <p className="text-shop-muted text-xs font-serif leading-loose mt-2 max-w-xs">
-              {shopData.description}
+              厳選された素材をじっくり炊き出した極上スープと、特注麺が織りなす至高のラーメン。店主がこだわり抜いた一杯をぜひご賞味ください。
             </p>
-          </div>
-
-          {/* Info */}
-          <div className="flex flex-col gap-4 text-sm font-serif">
-            <p className="text-shop-muted tracking-widest text-xs mb-2">店舗情報</p>
-            <p className="text-shop-text">{shopData.address}</p>
-            <p className="text-shop-text">{shopData.phone}</p>
-            <p className="text-shop-text">{shopData.businessHours}</p>
-            <p className="text-shop-red font-bold">定休日：{shopData.closedDay}</p>
           </div>
 
           {/* Nav */}
